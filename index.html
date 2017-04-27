@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React terminal</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app" @click='focus'>
+      <div id="console">
+        <p v-for="message in allMessages"><span v-if='message.command'>$> </span>{{ message.value }}</p>
+      </div>
+      <div>
+        $>  <span class="user-output">{{ message }}</span>
+      </div>
+      <div class="user-input-container">
+        <input ref='userInput' id='user-input' @keyup.13='submit' v-model="message" autofocus>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+  </script>
+</html>
