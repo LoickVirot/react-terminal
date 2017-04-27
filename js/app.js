@@ -22,6 +22,7 @@ var app = new Vue({
           this.addLine("clear : clear terminal");
           this.addLine("ls : list elements in folder");
           this.addLine("screenfetch : show info about vue-terminal");
+          this.addLine("cat [FILE] : print FILE to standard output");
           break;
         case "ls":
           this.addLine("about work contact");
