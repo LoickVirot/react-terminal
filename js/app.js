@@ -18,6 +18,8 @@ var app = new Vue({
     userInputProcess: function () {
       var message = this.message.split(" ");
       switch (message[0]) {
+        case "":
+          break;
         case "help":
           this.addLine("clear : clear terminal");
           this.addLine("ls : list elements in folder");
