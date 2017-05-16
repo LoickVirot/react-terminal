@@ -1,2 +1,2 @@
 # Vue-terminal
-React-terminal is a funny terminal emulator powered by VueJS.
+Vue-terminal is a funny terminal emulator powered by VueJS.
